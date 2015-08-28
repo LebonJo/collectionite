@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<!-- Intégration de bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Collectionite</title>
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body ng-app = "collectionite">
+
+		<div ng-view></div>
+
+		<footer class="panel-footer myFooter">
+			All rights reserved to me, myself and I.
+		</footer>
+
+		
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-route.min.js"></script>
+		<script src="lib/ui-bootstrap.min.js"></script>
+		<script src="lib/ngStorage.min.js"></script>
+		<script src="lib/ui-bootstrap-tpls.min.js"></script>
+
+		<!-- APP -->
+		<script src="app/collectionite.js"></script>
+		<!-- CONFIGS -->
+		<script src="app/configs/RouteConfig.js"></script>
+		<!-- SERVICES -->
+		<script src="app/services/CollectService.js"></script>
+		<!-- CONTROLLERS -->
+		<script src="app/controllers/NavController.js"></script>
+		<script src="app/controllers/UserController.js"></script>
+		<script src="app/controllers/HomeController.js"></script>
+		<script src="app/controllers/ObjetController.js"></script>
+		<script src="app/controllers/NewObjetController.js"></script>
+		<script src="app/controllers/SouhaitController.js"></script>
+	</body>
+</html>

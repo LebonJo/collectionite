@@ -1,1 +1,1 @@
-collectionite.js
+angular.module('collectionite', ["ngRoute", "ui.bootstrap", "ngStorage"]);

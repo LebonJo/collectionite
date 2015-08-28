@@ -1,0 +1,16 @@
+{
+  "name": "collectionite",
+  "version": "1.0.0",
+  "homepage": "https://github.com/LebonJo/collectionite",
+  "authors": [
+    "Jonathan Lebon <jonathan.lebon@outlook.com>"
+  ],
+  "description": "Gestion de collections",
+  "license": "MIT",
+  "dependencies": {
+    "angular-bootstrap": "~0.13.0",
+    "angular-route": "1.3.16",
+    "bootstrap": "~3.3.5",
+    "ngstorage": "~0.3.7"
+  }
+}

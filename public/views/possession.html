@@ -1,0 +1,23 @@
+<div ng-include src="'views/nav.html'"></div>
+
+<div class="container">
+	<h1>Ma collection</h1>
+	<!-- <div class="text-center">
+		<pagination  class="pagination-sm" ng-change="homeCtrl.pageChanges()" total-items="homeCtrl.totalItems" ng-model="homeCtrl.currentPage" items-per-page="homeCtrl.itemsPerPage" max-size="homeCtrl.maxSize" boundary-links="true" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+	</div> -->
+
+	<div class="row">
+		<div class="text-center col-lg-2 col-md-3 col-sm-4 col-xs-5 col-xs-offset-1 col-sm-offset-0" ng-repeat="objet in objetCtrl.listPossessions | orderBy:'id'">
+			<div class="itemContainer">
+				<div class="button" ng-click="objetCtrl.showDetail(objet.id)">
+					<img class="itemMini" ng-src="{{objet.photo}}">
+					<h4>{{ objet.nom }}</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="text-center">
+		<pagination  class="pagination-sm" ng-change="homeCtrl.pageChanges()" total-items="homeCtrl.totalItems" ng-model="homeCtrl.currentPage" items-per-page="homeCtrl.itemsPerPage" max-size="homeCtrl.maxSize" boundary-links="true" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+	</div> -->
+</div>

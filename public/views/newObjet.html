@@ -1,0 +1,32 @@
+<div ng-include src="'views/nav.html'"></div>
+
+<div class="container">
+	<h1>Nouvelle objet</h1>
+	<form ng-submit="newObjCtrl.createObjet(nom, description, photo100, photo300, type)">
+		<div class="form-group">
+			<label>Nom : </label>
+			<input type="text" class="form-control" ng-model="nom" placeholder="Nom">
+		</div>
+		<div class="form-group">
+			<label>Description : </label>
+			<input type="text" class="form-control" ng-model="description" placeholder="Description">
+		</div>
+		<div class="form-group">
+			<label>Miniature : (100x100)</label>
+			<input type="text" class="form-control" ng-model="photo100" placeholder="http://">
+		</div>
+		<div class="form-group">
+			<label>Photo : (300x300)</label>
+			<input type="text" class="form-control" ng-model="photo300" placeholder="http://">
+		</div>
+		<div class="form-group">
+			<label>Catégorie : </label>
+			<select class="form-control" ng-model="type">
+				<option ng-selected="{{newObjCtrl.type == categorie.label}}" ng-repeat="categorie in newObjCtrl.listCategories" value="{{categorie.label}}">{{categorie.label}}</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit" class="btn btn-primary">Valider</button>
+		</div>
+	</form>
+</div>

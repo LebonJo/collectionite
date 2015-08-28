@@ -1,0 +1,33 @@
+body{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.myFooter{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.myNavBar{
+	border-bottom-right-radius: 5%;
+	border-bottom-left-radius: 5%;
+}
+
+.itemContainer{
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10%;
+}
+
+.itemMini{
+	width: 100px;
+	height: 100px;
+}
+
+.image300{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
