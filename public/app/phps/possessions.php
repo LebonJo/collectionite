@@ -4,7 +4,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 $db = mysqli_connect('localhost', 'root', '', 'collectionite');
 
-//$db = mysqli_connect('mysql.hostinger.fr', 'u547058661_admin', 'VtqGHJBxr0', 'u547058661_base');
+//$db = mysqli_connect('mysql.hostinger.fr', '', '', '');
 
 mysqli_set_charset($db, 'utf8');
 
